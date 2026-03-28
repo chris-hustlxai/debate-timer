@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.card {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.resolution {
+  font-style: italic;
+  color: var(--text-secondary);
+  padding: 0.75rem 1rem;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
+.debaters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.debater {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+}
+
+.aff {
+  border-color: var(--color-aff);
+}
+
+.neg {
+  border-color: var(--color-neg);
+}
+
+.sideLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.vs {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.prepSummary {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-bottom: 1.5rem;
+}
+
+.voteSection {
+  margin-bottom: 1.5rem;
+}
+
+.voteTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.voteButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.voteBtn {
+  flex: 1;
+  padding: 0.875rem;
+  font-weight: 600;
+  border: 2px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: all 0.15s;
+}
+
+.voteAff {
+  border-color: var(--color-aff);
+}
+
+.voteNeg {
+  border-color: var(--color-neg);
+}
+
+.voteAff.voteSelected {
+  background: var(--color-aff);
+  color: white;
+}
+
+.voteNeg.voteSelected {
+  background: var(--color-neg);
+  color: white;
+}
+
+.resetBtn {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  width: 100%;
+  padding: 0.875rem;
+  font-size: 1rem;
+}
+
+.resetBtn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .debaters {
+    flex-direction: column;
+  }
+
+  .vs {
+    display: none;
+  }
+}
